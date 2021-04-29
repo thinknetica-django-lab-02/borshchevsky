@@ -1,0 +1,1319 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "group_name",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "common users",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "sellers",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$4OvhyfLEKY4A$3vCfTPbURp5tsiTUKuj0V/MMmyZkbYZ/LhCPFy9EKv4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vasya",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T13:58:46.446Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$qsvsrFiS8I5T$KAV8gZtJYfcqJ4CXpbu9ny9tYG5zBylhJ0BD9F38mso=",
+    "last_login": "2021-04-23T12:20:43.070Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "asdsaa",
+    "last_name": "sdasd",
+    "email": "admin@example.pcom",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-06T14:00:05.926Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$W5WlnDeuRkXa$kVMihzNhFA39Q6h8mtgSoFq9nFMTQq8dNFp0FS+ViAw=",
+    "last_login": "2021-04-06T14:01:03.871Z",
+    "is_superuser": false,
+    "username": "vasya1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T14:01:03.647Z",
+    "groups": [
+      [
+        "group_name"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$147ZWUku49HA$VGo86OWOEn/DKMoLS7TYrK2a/bpvERNr4MtTai8boDY=",
+    "last_login": "2021-04-06T17:34:49.140Z",
+    "is_superuser": false,
+    "username": "vanya",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T17:34:48.886Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "!Ces05M0WBHDyhIJESMnoCswXGkj8T6oLs7bCkWlk",
+    "last_login": "2021-04-06T19:14:50Z",
+    "is_superuser": false,
+    "username": "pavel",
+    "first_name": "Pavel",
+    "last_name": "Borshchevsky",
+    "email": "pavel@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T18:57:15Z",
+    "groups": [
+      [
+        "common users"
+      ],
+      [
+        "sellers"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$D1UCnJbiky3G$c066eU2s2kCE/piFl/WQrjsXSy5pPYuAIPEXDQvOidY=",
+    "last_login": "2021-04-06T19:11:57.980Z",
+    "is_superuser": false,
+    "username": "ivan",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T19:11:57.756Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$c1B5Klu7VKhp$/3aOrfeGEAzNL7ipKWvHWmN0CeY29bhMl4eIKSCafEQ=",
+    "last_login": "2021-04-06T19:14:24.693Z",
+    "is_superuser": false,
+    "username": "vovan",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-06T19:14:24.460Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$0fT7RzFVKQXm$aGlcPTdVxav3Nwe/bQCDXQLj+iaq6JU7tUTq3TV6pog=",
+    "last_login": "2021-04-07T15:15:24.543Z",
+    "is_superuser": false,
+    "username": "asd",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-07T15:15:24.289Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$coyjWumg0yLC$MPuD3VEtC4n8187J3VtWEQgguPx8VTXnRdBEdm39X38=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "asdasd",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-07T17:41:04.927Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$JakP2ojKsG3a$hCdx28EMo6BINyV7yd6F3ebJ3bFz3wrYa5O6aOgOm6g=",
+    "last_login": "2021-04-07T17:47:38.862Z",
+    "is_superuser": false,
+    "username": "asd123",
+    "first_name": "",
+    "last_name": "",
+    "email": "asd123@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-07T17:47:38.614Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$trqZcLg7kWHK$iUWOvEqzmdy6FEyMu8n9hJa6mNLf5VPTXcEwlRONLLM=",
+    "last_login": "2021-04-07T17:49:48.620Z",
+    "is_superuser": false,
+    "username": "asdasdsad",
+    "first_name": "",
+    "last_name": "",
+    "email": "3410914@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-07T17:49:43.851Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$oGxNx4HdyLV9$9ywoiB4jmMuUZa4lqekSraQRvsJtqQ+CHLKW85rDi7s=",
+    "last_login": "2021-04-08T11:10:10.248Z",
+    "is_superuser": false,
+    "username": "asdsdf",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-08T11:10:10.006Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$kcxyIXUeqMXx$DRTeWUCFp027bfYwYLh0hApT+w4durVinwWmh0TILyA=",
+    "last_login": "2021-04-08T11:11:31.423Z",
+    "is_superuser": false,
+    "username": "sdfsdf",
+    "first_name": "",
+    "last_name": "",
+    "email": "sdf@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-08T11:11:26.659Z",
+    "groups": [
+      [
+        "common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "asd",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "asasdd",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-24T07:46:07.684Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "!jQymI3OfBhJsSQ7SyCKGxX0KPEDHXmJXQF5UdbeT",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "aaa",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-24T07:57:56.394Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dnyc8b5lbr9c9np86z40ad6m48mtxqsx",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxd21Kes5g7dobHECOFCcV4u4QKQW0b2beSyTc1pq2zkuaijgLLU6_G2F-cNtBuWO7zTLPbV0mkrsiD9rldS78vBzu30HFXr91BNZReRcZsrVAAOSQA-pgLQ3e-xyNw1D0GI2KxY1kyCBQ0KCCGox4fwDH2jb9:1lUV52:2Nh_ZKKxMo_K7DPSPraRJPlxQtg3buDU65FbUzLFmaY",
+    "expire_date": "2021-04-22T13:52:20.783Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "g70lfgbjpqs9bqtud20qtaaglbzdp1y0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnx305JzxmsXXtDDMhBcSKBEHeHSCmgfTNvXizCuoxxbTTHklnPJDv8bgjpSnUD-QL1PPE01WUuyDeF77Tx05Tpdtzdv8AIbfy-gyMZhDWBXNLaoXNogDxIrzV21toUlAGf5RCUCNkMqFCBQy-d8KJTW7RRa2WqkR73Mj9Z370_XfQ-Og:1lZunb:EvT9ic9g933ePTv-EmCIh2Hu5I4jdd31J1ZPHgD1rf8",
+    "expire_date": "2021-05-07T12:20:43.090Z"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 1,
+  "fields": {
+    "title": "Smartphones"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 2,
+  "fields": {
+    "title": "testcat"
+  }
+},
+{
+  "model": "main.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "title": "Iphone 100500",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "title": "Iphone 700500",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "title": "asdasdasd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asdasd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asdasasdd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asdasasddsdf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asdasasddsdfsdf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "title": "asdasdafq2w32",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 11,
+  "fields": {
+    "category": 1,
+    "title": "asdasdafq2asdw32",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 12,
+  "fields": {
+    "category": 1,
+    "title": "asdf23rf23r",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 13,
+  "fields": {
+    "category": 1,
+    "title": "asdf23rf23rasd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 14,
+  "fields": {
+    "category": 1,
+    "title": "asdf23rf23rasdasd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 15,
+  "fields": {
+    "category": 1,
+    "title": "asdf23rf23rasdasdasd",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 16,
+  "fields": {
+    "category": 1,
+    "title": "asdsdfg23asdasaasdasdsddsdfsdf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 17,
+  "fields": {
+    "category": 1,
+    "title": "asdasdasdasdfasfasf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 18,
+  "fields": {
+    "category": 1,
+    "title": "asdasdasdaasdasdasdsdfasfasf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 19,
+  "fields": {
+    "category": 1,
+    "title": "asd32wwd23d",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 20,
+  "fields": {
+    "category": 1,
+    "title": "asd233rtdsgfsdfa",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 21,
+  "fields": {
+    "category": 1,
+    "title": "ZZZZZZZZZZZZZZ",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 22,
+  "fields": {
+    "category": 1,
+    "title": "Y",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-09",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 23,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfasf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 24,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfasf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 25,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfasf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 26,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsdfsdfasf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 27,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsdfsdfasfsdfsdf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 28,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsSAFDFdfsdfasfsdfsdf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 29,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsSAasFDFdfsdfasfsdfsdf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 30,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsSAasdasFDFdfsdfasfsdfsdf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 31,
+  "fields": {
+    "category": 1,
+    "title": "asd23r23rasfsSAasdaasdsFDFdfsdfasfsdfsdf23t2adsf",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-13",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 32,
+  "fields": {
+    "category": 1,
+    "title": "a",
+    "description": "",
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-24",
+    "tags": []
+  }
+},
+{
+  "model": "main.product",
+  "pk": 33,
+  "fields": {
+    "category": 2,
+    "title": "TestProduct1",
+    "description": null,
+    "width": null,
+    "height": null,
+    "depth": null,
+    "weight": null,
+    "image": "",
+    "date_created": "2021-04-24",
+    "tags": []
+  }
+},
+{
+  "model": "main.tag",
+  "pk": 1,
+  "fields": {
+    "tag_name": "red"
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "birth_date": "2000-04-06",
+    "phone_number": "+79163410914",
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "vanya"
+    ],
+    "birth_date": "2021-04-06",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "pavel"
+    ],
+    "birth_date": "2021-04-06",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "ivan"
+    ],
+    "birth_date": "2021-04-06",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "vovan"
+    ],
+    "birth_date": "2021-04-06",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "asd"
+    ],
+    "birth_date": "2021-04-07",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "asdasd"
+    ],
+    "birth_date": "2021-04-07",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "asd123"
+    ],
+    "birth_date": "2021-04-07",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "asdasdsad"
+    ],
+    "birth_date": "2021-04-07",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "asdsdf"
+    ],
+    "birth_date": "2021-04-08",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "sdfsdf"
+    ],
+    "birth_date": "2021-04-08",
+    "phone_number": null,
+    "avatar": ""
+  }
+},
+{
+  "model": "main.subscriber",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "main.subscriber",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "pavel"
+    ]
+  }
+},
+{
+  "model": "main.subscriber",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "ivan"
+    ]
+  }
+},
+{
+  "model": "main.smslog",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "code": "1585",
+    "server_response": "{'message-count': '1', 'messages': [{'to': '79163410914', 'message-id': '150000018C516843', 'status': '0', 'remaining-balance': '1.76880000', 'message-price': '0.05780000', 'network': '25001'}]}"
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "asd123"
+    ],
+    "email": "asd123@gmail.com",
+    "verified": false,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "asdasdsad"
+    ],
+    "email": "3410914@gmail.com",
+    "verified": false,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "sdfsdf"
+    ],
+    "email": "sdf@example.com",
+    "verified": false,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "pavel"
+    ],
+    "provider": "google",
+    "uid": "118438125075038392514",
+    "last_login": "2021-04-06T19:14:50.273Z",
+    "date_joined": "2021-04-06T18:57:15.314Z",
+    "extra_data": "{\"id\": \"118438125075038392514\", \"name\": \"Pavel Borshchevsky\", \"given_name\": \"Pavel\", \"family_name\": \"Borshchevsky\", \"picture\": \"https://lh5.googleusercontent.com/-MlqidYey46A/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmD6MdsFdpgfoOVj3jqkYfXVX4nVQ/s96-c/photo.jpg\", \"locale\": \"en\"}"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-04-06T14:00:35.860Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "group_name",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-04-06T18:58:20.082Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "3",
+    "object_repr": "sellers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-04-06T18:58:45.096Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "pavel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-04-06T19:12:53.909Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Smartphones",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-04-06T19:13:00.382Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "tag"
+    ],
+    "object_id": "1",
+    "object_repr": "red",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-04-06T19:13:07.540Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Iphone 100500",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-04-08T14:08:03.538Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "subscriber"
+    ],
+    "object_id": "1",
+    "object_repr": "Subscriber object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-04-08T14:08:07.712Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "subscriber"
+    ],
+    "object_id": "2",
+    "object_repr": "Subscriber object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-04-08T14:08:11.231Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "subscriber"
+    ],
+    "object_id": "3",
+    "object_repr": "Subscriber object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-04-08T14:35:48.962Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "pavel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-04-09T15:32:29.491Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "main",
+      "product"
+    ],
+    "object_id": "19",
+    "object_repr": "asd32wwd23d",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
