@@ -128,7 +128,7 @@ class UpdateProduct(UpdateView):
     template_name_suffix = '_update_form'
 
 
-@receiver(post_save, sender=User)
+# @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         Group.objects.get_or_create(name=DEFAULT_GROUP_NAME)
@@ -146,6 +146,6 @@ def create_user_profile(sender, instance, created, **kwargs):
             )
 
 
-@receiver(post_save, sender=Product)
+# @receiver(post_save, sender=Product)
 def send_novelty(instance, **kwargs):
     send_novelty_task.delay(instance.id)
