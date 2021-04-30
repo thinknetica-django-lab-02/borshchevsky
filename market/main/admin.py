@@ -4,7 +4,8 @@ from django.db import models
 from django.contrib import admin
 from django.contrib.flatpages.admin import FlatPageAdmin
 
-from .models import Category, Product, Tag, Profile, Subscriber, SMSLog
+from .models import Category, Product, Tag, Profile, Subscriber, SMSLog, ProductInstance
+from .utils import archive, publish
 
 
 class FlatPageAdminNew(FlatPageAdmin):
@@ -22,6 +23,13 @@ admin.site.register(Subscriber)
 admin.site.register(SMSLog)
 
 
+class ProductInstanceInline(admin.TabularInline):
+    model = ProductInstance
+
+
 @admin.register(Product)
 class Product(admin.ModelAdmin):
-    list_display = ('title', 'date_created')
+    list_display = ['title', 'date_created', 'archived']
+    inlines = [ProductInstanceInline]
+    list_filter = ['tags', 'date_created']
+    actions = [archive, publish]

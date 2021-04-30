@@ -25,3 +25,17 @@ def generate_code():
     """
 
     return str(randint(1000, 9999)).zfill(4)
+
+
+def archive(modeladmin, request, queryset):
+    """
+    function for Product ModelAdmin - archives selected queries
+    """
+    queryset.update(archived=True)
+
+
+def publish(modeladmin, request, queryset):
+    """
+    function for Product ModelAdmin - publishes selected queries
+    """
+    queryset.update(archived=False)
