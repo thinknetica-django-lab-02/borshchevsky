@@ -4,11 +4,10 @@
 
 {% block content %}
     {% load market_extras %}
-
-    {% if turn_on_block %}
-        <div class="starter-template">
-            <h1>{{ greeting|reverse }}</h1><br>
-            Time: {% now "H:i:s" %}
-        </div>
+    {% if queryset %}
+        Results found: {{ queryset|length }}<hr>
+        {% for query in queryset %}
+            <a href="{{ query.get_absolute_url }}">{{ query }}</a><br>
+        {% endfor %}
     {% endif %}
 {% endblock %}

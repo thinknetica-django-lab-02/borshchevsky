@@ -1,13 +1,9 @@
-from typing import Tuple, Union, Iterable, Callable
-
 from django.contrib import messages
 from django.contrib.auth.models import User, Group
 from django.core.cache import cache
 from django.core.mail import send_mail
 from django.db.models.query import QuerySet
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from django.forms.models import ModelForm, BaseModelForm
+from django.forms.models import ModelForm
 from django.http import HttpResponseRedirect
 from django.http.request import HttpRequest
 from django.http.response import HttpResponse
@@ -20,15 +16,17 @@ from . import email_messages
 from .forms import UserForm, ProfileFormSet
 from .models import Product, Profile, SMSLog
 from .tasks import send_novelty_task
-from .utils import send_sms
+from .utils import send_sms, search_product
 
 
 def index(request: HttpRequest) -> HttpResponse:
-    turn_on_block = True
-    greeting = 'Hello'
+    search_text = request.GET.get('search')
+    queryset = None
+    if search_text:
+        queryset = search_product(search_text)
+
     return render(request, 'index.html', {
-        'turn_on_block': turn_on_block,
-        'greeting': greeting,
+        'queryset': queryset,
     })
 
 
