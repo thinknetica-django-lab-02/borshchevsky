@@ -1,7 +1,9 @@
 from random import randint
 
 import vonage
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 
+from main.models import Product
 from market.settings import VONAGE_API_KEY, VONAGE_SECRET
 
 
@@ -39,3 +41,11 @@ def publish(modeladmin, request, queryset):
     function for Product ModelAdmin - publishes selected queries
     """
     queryset.update(archived=False)
+
+
+def search_product(search_text):
+    vector = SearchVector('title', weight='A') + SearchVector('description', weight='B')
+    query = SearchQuery(search_text)
+
+    # Не нашел как сделать фильтр по вхождению строки
+    return Product.objects.annotate(rank=SearchRank(vector, query)).order_by('-rank')
