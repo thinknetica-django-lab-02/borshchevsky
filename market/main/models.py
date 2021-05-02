@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
-from django.http.response import HttpResponse
 from django.urls import reverse
 from django.utils import timezone
 
@@ -29,7 +29,7 @@ class Seller(models.Model):
 
 class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
-    tags = models.ManyToManyField('Tag', blank=True)
+    tags = ArrayField(models.CharField(max_length=255))
 
     title = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
