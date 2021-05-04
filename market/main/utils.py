@@ -49,3 +49,11 @@ def search_product(search_text):
 
     # Не нашел как сделать фильтр по вхождению строки
     return Product.objects.annotate(rank=SearchRank(vector, query)).order_by('-rank')
+
+
+def is_mobile(user_agent):
+    """
+    detects if particular user_agent is a mobile or not
+    """
+    words = ['iphone', 'android', 'opera mini']
+    return any(word in user_agent for word in words)
