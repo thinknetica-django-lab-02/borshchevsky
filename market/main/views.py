@@ -1,3 +1,5 @@
+import logging
+
 from django.contrib import messages
 from django.contrib.auth.models import User, Group
 from django.core.cache import cache
@@ -17,6 +19,8 @@ from .forms import UserForm, ProfileFormSet
 from .models import Product, Profile, SMSLog
 from .tasks import send_novelty_task
 from .utils import send_sms, search_product
+
+logger = logging.getLogger(__name__)
 
 
 def index(request: HttpRequest) -> HttpResponse:
