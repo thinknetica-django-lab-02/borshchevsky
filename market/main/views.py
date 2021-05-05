@@ -151,3 +151,7 @@ def create_user_profile(sender, instance, created, **kwargs):
 # @receiver(post_save, sender=Product)
 def send_novelty(instance, **kwargs):
     send_novelty_task.delay(instance.id)
+
+
+def robots_view(request):
+    return render(request, 'robots.txt')
