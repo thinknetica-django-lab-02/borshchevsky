@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from django.contrib.messages import constants as messages
 
 from market import keys
@@ -49,7 +50,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'main.middlewares.hook_user_agent',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -58,10 +58,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'main.middlewares.hook_user_agent',
 ]
 
 ROOT_URLCONF = 'market.urls'
-
 
 TEMPLATES = [
     {
@@ -170,3 +170,23 @@ CACHES = {
         }
     }
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
+            'email_backend': 'django.core.mail.backends.console.EmailBackend',
+        }
+    },
+}
+
+ADMINS = [
+    ('admin', 'admin@example.com')
+]
