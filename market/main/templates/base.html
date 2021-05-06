@@ -31,14 +31,17 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/4.4/examples/starter-template/starter-template.css" rel="stylesheet">
-    <title>{% block title %}Market{% endblock %}</title>
+    <link rel="stylesheet" href="static/css/default.css">
+
+    {% block head %}
+    {% endblock %}
+    {% include 'navbar.html' %}
 </head>
+
 <body>
-
-{% include 'navbar.html' %}
-
-{% block content %}{% endblock %}
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
 
 {% block pagination %}
 {% if is_paginated %}

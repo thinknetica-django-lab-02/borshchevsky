@@ -2,6 +2,20 @@
 
 {% block title %}Homepage{% endblock %}
 
+{% block head %}
+    <title>Market - Homepage</title>
+    <meta name="description" content="Free delivery on millions of items with Prime. Low prices across earth's biggest selection of books, music, DVDs, electronics, computers, software, apparel & accessories, shoes, jewelry, tools & hardware, housewares, furniture, sporting goods, beauty & personal care, groceries & just about anything else.">
+    <meta name="keywords" content="buy, cell phones, electronics, online shopping">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Homepage",
+          "name": "Marketplace",
+          "description": "Free delivery on millions of items with Prime. Low prices across earth's biggest selection of books, music, DVDs, electronics, computers, software, apparel & accessories, shoes, jewelry, tools & hardware, housewares, furniture, sporting goods, beauty & personal care, groceries & just about anything else.",
+        }
+    </script>
+{% endblock %}
+
 {% block content %}
     {% load market_extras %}
     {% if queryset %}

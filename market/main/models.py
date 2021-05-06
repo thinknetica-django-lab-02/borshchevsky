@@ -48,7 +48,7 @@ class Product(models.Model):
         return reverse('product-detail', args=[str(self.id)])
 
     def get_tags(self) -> set:
-        return {tag.tag_name for tag in self.tags.all()}
+        return {tag for tag in self.tags}
 
 
 class ProductInstance(models.Model):

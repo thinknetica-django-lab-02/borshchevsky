@@ -13,7 +13,7 @@ from django.shortcuts import render
 from django.views.generic import DetailView, ListView, UpdateView, CreateView
 from django.views.generic.base import ContextMixin
 
-from market.settings import DEFAULT_GROUP_NAME
+from market.settings import DEFAULT_GROUP_NAME, STATICFILES_URL
 from . import email_messages
 from .forms import UserForm, ProfileFormSet
 from .models import Product, Profile, SMSLog
