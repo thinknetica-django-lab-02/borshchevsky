@@ -1,0 +1,78 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Market API
+
+servers:
+  - url: https://127.0.0.1/api
+
+
+paths:
+  /products/{product_id}:
+    get:
+      description: Returns an information about particular product
+      parameters:
+        - name: product_id
+          in: path
+          required: True
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    categoryID:
+                      type: integer
+                    width:
+                      type: integer
+                    height:
+                      type: integer
+                    depth:
+                      type: integer
+                    weight:
+                      type: integer
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                message:
+                  type: string
+  /customer/{user_id}:
+    get:
+      description: Returns an user profile
+      parameters:
+        - name: user_id
+          in: path
+          required: True
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties:
+                    phoneNumber:
+                      type: string
+                    birthDate:
+                      type: string
+                      format: date
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                message:
+                  type: string
+
